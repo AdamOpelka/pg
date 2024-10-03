@@ -2,13 +2,16 @@
 def hello():
     print("Hello World!")
 """
+
+
 def sudy_lichy(cislo):
-    if (cislo%2 == 0):
+    if cs % 2 == 0:
         print("Číslo je sudé")
-    elif (cislo%2 != 0):
+    elif cs % 2 != 0:
         print("Číslo je liché")
     else:
-        print("Nezadal jsi číslo")
+       print("Nezadal jsi číslo")
 
-cislo = input("Zadej číslo:")
-sudy_lichy(cislo)
+cs = int(input("Zadej číslo:"))
+sudy_lichy(cs)
+
