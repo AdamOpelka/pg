@@ -4,14 +4,13 @@ def hello():
 """
 
 
-def sudy_lichy(cislo):
+def sudy_nebo_lichy(cislo):
     if cs % 2 == 0:
         print("Číslo je sudé")
-    elif cs % 2 != 0:
-        print("Číslo je liché")
     else:
-       print("Nezadal jsi číslo")
+        print("Číslo je liché")
+
 
 cs = int(input("Zadej číslo:"))
-sudy_lichy(cs)
+sudy_nebo_lichy(cs)
 
