@@ -2,7 +2,7 @@ def cislo_text(cislo):
     jednotky = ["nula", "jedna", "dva", "tři", "čtyři", "pět", "šest", "sedm", "osm", "devět"]
     desitky = ["", "deset", "dvacet", "třicet", "čtyřicet", "padesát", "šedesát", "sedmdesát", "osmdesát", "devadesát"]
     teeny = ["deset", "jedenáct", "dvanáct", "třináct", "čtrnáct", "patnáct", "šestnáct", "sedmnáct", "osmnáct", "devatenáct"]
-
+    cislo = int(cislo)
     # Pokud je číslo mimo rozsah
     if cislo < 0 or cislo > 100:
         return "Číslo je mimo rozsah 0-100"
@@ -28,6 +28,6 @@ def cislo_text(cislo):
     return vysledek
 
 if __name__ == "__main__":
-    cislo = int(input("Zadej číslo: "))
+    cislo = input("Zadej číslo: ")
     text = cislo_text(cislo)
     print(text)
