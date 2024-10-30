@@ -15,7 +15,7 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
         smer = 1  # Směr pohybu pěšce (vpřed)
         if cilova_pozice == (pozice[0] + smer, pozice[1]):  # pohyb o 1
             return True
-        elif pozice[0] == 2 and cilova_pozice == (pozice[0] + 2 * smer, pozice[1]):  # pohyb o 2 z výchozí pozice
+        elif pozice[0] == 1 and cilova_pozice == (pozice[0] + 2 * smer, pozice[1]):  # pohyb o 2 z výchozí pozice
             if (pozice[0] + smer, pozice[1]) not in obsazene_pozice:  # ověření, zda je mezilehlá pozice volná
                 return True
         return False
