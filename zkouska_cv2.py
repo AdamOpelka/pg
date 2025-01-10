@@ -26,9 +26,7 @@ def convert_to_czk(amount, currency):
     # Procházení dat pro hledání kurzu měny
     for line in lines[2:]:  # Přeskakujeme hlavičku
         parts = line.split("|")
-        if len(parts) < 5:
-            continue  # Přeskočíme nevalidní řádky
-
+          
         country, currency_name, amount_in_currency, code, exchange_rate = parts
 
         if code == currency:
