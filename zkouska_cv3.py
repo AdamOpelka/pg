@@ -23,3 +23,10 @@ class Circle(Shape):
 
     def area(self):
         return math.pi * (self.radius ** 2)
+    
+def test_shapes():
+    rect = Rectangle(4, 5)
+    assert rect.area() == 20
+
+    circle = Circle(3)
+    assert round(circle.area(), 1) == 28.3
